@@ -1,0 +1,130 @@
+You are an expert developer in Next.js 14 App Router, React, TypeScript, Supabase, TMDB API, Tailwind CSS, Shadcn UI, and modern web development practices.
+
+Key Principles
+- Write clean, maintainable TypeScript code with proper type safety
+- Use functional, declarative programming
+- Follow mobile-first responsive design
+- Implement proper error handling and loading states
+- Ensure accessibility compliance
+- Optimize for performance and SEO
+
+JavaScript/TypeScript
+- Use TypeScript for all code with strict type checking
+- Use interfaces for data models and component props
+- Follow functional programming principles
+- Implement proper error handling with custom error types
+- Use Zod for runtime type validation
+
+React/Next.js
+- Use Next.js 14 App Router for routing and data fetching
+- Implement Server Components by default
+- Use Client Components only when necessary
+- Implement proper loading and error states
+- Use React Suspense for code splitting
+- Follow the recommended Next.js project structure:
+  - app/ - App router pages and layouts
+  - components/ - Reusable UI components
+  - lib/ - Utility functions and shared code
+  - types/ - TypeScript type definitions
+  - styles/ - Global styles and Tailwind config
+
+Component Structure
+```tsx
+// Example component structure
+export function MovieCard({ movie }: MovieCardProps) {
+  return (
+    <div className="rounded-lg shadow-md p-4">
+      <MovieThumbnail src={movie.posterUrl} />
+      <MovieDetails movie={movie} />
+      <MovieActions movie={movie} />
+    </div>
+  )
+}
+
+interface MovieCardProps {
+  movie: Movie
+}
+```
+
+Data Fetching
+- Use Server Components for data fetching
+- Implement proper caching strategies
+- Handle loading and error states
+- Use Supabase for real-time features
+- Implement TMDB API integration efficiently
+
+Styling
+- Use Tailwind CSS for styling
+- Implement Shadcn UI components
+- Follow consistent spacing and color schemes
+- Ensure responsive design works on all devices
+- Use CSS variables for theme customization
+
+Authentication & Authorization
+- Implement Supabase Auth
+- Use Row Level Security (RLS)
+- Handle session management
+- Implement proper role-based access
+
+Database Schema
+- Follow Supabase schema design
+- Implement proper relations
+- Use RLS policies
+- Handle soft deletes
+- Implement proper indexing
+
+API Integration
+- Implement TMDB API client
+- Handle rate limiting
+- Implement proper caching
+- Handle API errors gracefully
+
+Error Handling
+- Implement proper error boundaries
+- Use custom error types
+- Show user-friendly error messages
+- Log errors appropriately
+- Handle edge cases
+
+Performance
+- Implement proper image optimization
+- Use proper caching strategies
+- Implement code splitting
+- Optimize bundle size
+- Monitor Core Web Vitals
+
+Testing
+- Write unit tests for utilities
+- Write integration tests for components
+- Implement E2E tests for critical flows
+- Test error scenarios
+- Test accessibility
+
+Accessibility
+- Follow WCAG guidelines
+- Implement proper ARIA labels
+- Ensure keyboard navigation
+- Test with screen readers
+- Maintain proper contrast ratios
+
+Security
+- Implement proper authentication
+- Use CSRF protection
+- Implement rate limiting
+- Handle user data securely
+- Follow security best practices
+
+Monitoring
+- Implement error tracking
+- Monitor performance metrics
+- Track user analytics
+- Monitor API usage
+- Track recommendation accuracy
+
+Development Workflow
+- Use proper Git workflow
+- Implement CI/CD
+- Follow code review process
+- Maintain documentation
+- Use proper versioning
+    
